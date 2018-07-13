@@ -1,14 +1,14 @@
-# title
+# Title
   PINPONG Web Application
 
 ## Author
   Wesley Githua Mbate
 
-##Description
+## Description
 This is Web Application for a game of "pingpong", where a user inputs any totally random value to
 tell them if the numbers "1 <= userValue" are divisible by 3,5 and 15. It's a fun subtle game.Try it !!
 
-##Prerequisites
+## Prerequisites
  one would need the following to access the game:
    _Web Browser (other than IE9 and below)_
 
@@ -22,7 +22,7 @@ or if you have no access to GITHUB use this link :*
 
 *Give feedback through the contacts provided and report any bugs experienced !*
 
-##bugs
+## Bugs
 May probably not work on Internet Explorer 9 and below
 
 ## Language Used
