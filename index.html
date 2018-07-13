@@ -9,25 +9,29 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
+  <img id="head" src="images/download.jpeg">
   <h1>PING-PONG<h1>
+    <div class="container">
     <h2>Let's Play!<h2>
       <h3>Rules:<h3>
         <p>Ping Pong will count up to your number from 1 with the following exceptions:
 
           <ol>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li> Numbers divisible by 3 become "ping".</li>
+            <li> Numbers divisible by 5 become "pong".</li>
+            <li> Numbers divisible by 3 and 5 become "pingpong".</li>
           </ol>
           <br>
           <br>
-          <div class="container">
-            <form class="" action="index.html" method="post">
-              <label for=""> Enter your number here: </label>
-              <input type="text" name="text" id="input"/>
-              <button type="submit" class="btn btn-outline-danger">Ping-Pong!</button>
 
+            <form id="form" action="index.html" method="post">
+              <label for=""> Enter your number here: </label>
+              <input type="text" placeholder="Enter Number" id="input"/>
+              <button type="submit" class="btn btn-outline-danger">Ping-Pong!</button>
             </form>
+
+            <ul id="List">
+            </ul>
           </div>
         </body>
         </html>
