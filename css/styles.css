@@ -21,7 +21,7 @@ ul{
 
 }
 input{
-  opacity: 0.1;
+
 }
 #bottom{
   background-color: #e74c3c;
@@ -46,7 +46,9 @@ input{
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
-
+a{
+  text-decoration: none;
+}
 /*over effect see url (https://codepen.io/cassidoo/pen/RZOWQb) for further explanation of styles used*/
 #hover {
   display: flex;
