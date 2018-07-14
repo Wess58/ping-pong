@@ -1,27 +1,135 @@
 body{
-  font-family: 'Graffiti';
-  background-color: lightgrey;
+  font-family: ;
+
 
 }
-/* @font-face {
-font-family: "Graffiti";
-src:url("css/fonts/MARSNEVENEKSK-Regular.otf") format("opentype");
-} */
-#head{
-  width: 100%;
-  height:500px;
+ul{
+  list-style-type: none;
 }
-h1{
-  font-size: 150px;
-  font-family: 'Graffiti' serif;
-  color: black;
-  margin-left: 20%;
-  margin-top: -20%;
-  margin-bottom: 10%;
+#img1{
+  height: 100px;
+  width: 100px;
+  margin-top: 7em;
+  margin-right: 3em;
+}
+.container{
+  margin-left: 30%;
+}
+
+/*over effect see url (https://codepen.io/cassidoo/pen/RZOWQb) for further explanation of styles used*/
+#hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  background: white;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
 
 }
-h1:hover{
-  color: white;
-  border-style: solid;
-  box-shadow: 0 0 6px 6px #F2F2F2;
+
+#hover:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+#hover:hover:before, #hover:hover:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #FDA8CF;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+#hover:hover:after {
+  background: #F3CE5E;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
 }

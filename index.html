@@ -9,17 +9,28 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
-  <div class="Pong">
-    <h1><strong>Ping-pong</strong></h1>
-  </div>
-  <form id="PingPong">
-    <div class="form-group">
-      <label for="ping">Enter number:</label>
-      <input id="ping" type="text">
+  <div id="hover">HoVeR Me<br>PiNg PoNg <br>gAmE </div>
+
+  <div class="container">
+    <h2>Let's play this game</h2>
+    <h3>First there's basic rules to the game:</h3>
+    <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+    <ol>
+      <li> Numbers divisible by 3 become "ping" </li>
+      <li> Numbers divisible by 5 become "pong"</li>
+      <li> Numbers divisible by 3 and 5 become "pingpong"</li>
+    </ol>
+
+    <form id="PingPong">
+      <div class="form-group">
+        <label for="ping"><strong>Enter number:</strong></label>
+        <input id="ping" type="text">
+        <button type="submit" class="btn btn-outline-danger">Check!</button>
+      </div>
+
+    </form>
+    <ul>
+      <li id="result"></li>
     </div>
-    <button type="submit" class="btn">Check!</button>
-  </form>
-  <div id="result">
-  </div>
-      </body>
-      </html>
+</body>
+</html>
