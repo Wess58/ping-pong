@@ -18,7 +18,7 @@ tell them if the numbers "1 <= userValue" are divisible by 3,5 and 15. It's a fu
 *open your default Web browser(internet connection is required)*
 
 *search for Wess58 on and click on the repository "ping-pong" where you will find an active link to the site in the repository.
-or if you have no access to GITHUB use this link :*
+or if you have no access to GITHUB use this link :https://wess58.github.io/ping-pong/*
 
 *Give feedback through the contacts provided and report any bugs experienced !*
 
