@@ -4,8 +4,8 @@ $(document).ready(function(){
     event.preventDefault();
 
     var myNumber = parseInt($("input#ping").val());
-    var result = PingPong(myNumber);
-    $("#result").text(result);
+    var results = PingPong(myNumber);
+    $("#result").append("<li>"+results+"<li>");
 
   });
 });
@@ -22,5 +22,5 @@ var PingPong = function(react){
   }
   else{
     return react;
-  }
-};
+    }
+  };
