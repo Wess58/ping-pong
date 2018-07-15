@@ -23,7 +23,7 @@ or if you have no access to GITHUB use this link :https://wess58.github.io/ping-
 *Give feedback through the contacts provided and report any bugs experienced !*
 
 ## Bugs
-May probably not work on Internet Explorer 9 and below
+May probably not work on Internet Explorer 9 and below and also malfunctions on Chromium/Chrome
 
 ## Language Used
 The programming languages used in this project are HTML and JavaScript. It was styles using bootstrap and a custom stylesheet.
