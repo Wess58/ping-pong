@@ -45,6 +45,7 @@ opacity: 0.6;
   border-radius: 50%;
   -webkit-transition: -webkit-transform .8s ease-in-out;
           transition:         transform .8s ease-in-out;
+   transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 }
 .bottom:hover{
@@ -89,7 +90,12 @@ a:hover{
     height: 400px;
     background: #262626;
     overflow: hidden;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 
+}
+.card:hover{
+  box-shadow: 5px 5px 15px 0  #7b241c ;
+  margin-top: 10px;
 }
 .card .imgBx,
 .card .details {
