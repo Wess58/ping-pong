@@ -3,24 +3,28 @@ $(document).ready(function(){
   $("form#PingPong").submit(function(event){
     event.preventDefault();
 
-    var myNumber = parseInt($("input#ping").val());
-    var results = PingPong(myNumber);
-    $("#result").append("<li>"+results+"<li>");
+    myNumber = parseInt($("input#ping").val());
+    $("#result").text(" ");
+    react();
+    $("input#ping").val();
 
   });
 });
 
 //Business Logic
-var PingPong = function(react){
-  if ((react %3) ===0 && (react %5) ===0) {
-    return "pingpong"
-  }else if ((react %5)===0){
-    return "pong"
+var myNumber;
+  function react( ){
+  for(var i=1; i <= myNumber; i++){
+  if ((i %3) ===0 && (i %5) ===0) {
+      $("#result").append("<li>pingpong</li>");
+  }else if ((i %5)===0){
+      $("#result").append("<li>pong</li>");
   }
-  else if ((react %3)===0){
-    return "ping"
+  else if ((i %3)===0){
+      $("#result").append("<li>ping</li>");
   }
   else{
-    return react;
+      $("#result").append("<li>"+ i +"</li>");
     }
-  };
+  }
+}

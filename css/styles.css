@@ -1,5 +1,5 @@
 html{
-  min-width: 103%;
+  width: 100%;
 }
 body{
 background-color: lightgrey;
@@ -7,8 +7,9 @@ height: 100%;
 
 }
 ul{
-  list-style-type: none;
+  margin-top: 9em;
 }
+
 #img1{
   width: 100%;
   height: 500px;
@@ -41,13 +42,16 @@ opacity: 0.6;
 .bottom{
   width: 50px;
   height: 50px;
-  margin-right: 20px;
+  margin-right: 30px;
   border-radius: 50%;
   -webkit-transition: -webkit-transform .8s ease-in-out;
           transition:         transform .8s ease-in-out;
+   transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 }
 .bottom:hover{
+  width: 70px;
+  height: 70px;
   opacity: 0.3;
   transform:rotate3d();
   -webkit-transform: rotate(360deg);
@@ -69,17 +73,30 @@ a:hover{
   color: white;
   font-size: 20px;
 }
+.email{
+  padding-left: 70%;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  background-color: #e74c3c;
+}
+
+
 /*Hover effect for sidebar check url (https://freefrontend.com/css-hover-effects/) for better info and understanding*/
 .card {
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 10%;
     transform: translate(-50%,-50%);
     width: 300px;
     height: 400px;
     background: #262626;
     overflow: hidden;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 
+}
+.card:hover{
+  box-shadow: 5px 5px 15px 0  #7b241c ;
+  margin-top: 10px;
 }
 .card .imgBx,
 .card .details {
