@@ -9,6 +9,14 @@ height: 100%;
 ul{
   margin-top: 9em;
 }
+.Font{
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-family: 'Nosifer', cursive;
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Plaster', cursive;
+    font-family: 'Monofett', cursive;
+
+}
 
 #img1{
   width: 100%;
